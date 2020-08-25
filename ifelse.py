@@ -1,3 +1,4 @@
+a=float(input())
 if (a%2 != 0):
     print("Weird")
 if (a%2 == 0) :
