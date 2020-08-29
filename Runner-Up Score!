@@ -1,0 +1,13 @@
+n=int(input())
+lst=list()
+b=input()
+m=b.split(" ")
+for i in range (len(m)):
+    lst.append(int(m[i]))
+c=max(lst)
+lst.sort()
+for i in lst:
+    if i<c:
+        run=i
+        continue
+print(run)
