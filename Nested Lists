@@ -1,0 +1,16 @@
+n=int(input())
+lst=list()
+lstt=list()
+for i in range (0,n):
+    a=input()
+    b=float(input())
+    lst.append(a)
+    lstt.append(b)
+c=min(lstt)
+count=0
+sec=0
+for i in lstt:
+    if i>c and i<=sec :
+        sec=i
+        count=count+1
+print(lst[count])
