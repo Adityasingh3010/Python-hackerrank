@@ -13,6 +13,8 @@ d=max(lstt)
 count=0
 rep=0
 for i in lstt:
+    if i==c:
+        count=count+1
     if i>c and i<d :
         for j in replst:
             if i==j:
