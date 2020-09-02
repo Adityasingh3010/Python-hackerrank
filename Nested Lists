@@ -1,16 +1,24 @@
 n=int(input())
 lst=list()
 lstt=list()
+replst=list()
 for i in range (0,n):
     a=input()
     b=float(input())
     lst.append(a)
     lstt.append(b)
+    replst.append(b)
 c=min(lstt)
+d=max(lstt)
 count=0
-sec=0
+rep=0
 for i in lstt:
-    if i>c and i<=sec :
-        sec=i
+    if i>c and i<d :
+        for j in replst:
+            if i==j:
+                rep=rep+1
         count=count+1
-print(lst[count])
+        break
+if rep!=1:
+    print(lst[rep-1])
+print(lst[count-1])
