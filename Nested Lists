@@ -24,3 +24,43 @@ for i in lstt:
 if rep!=1:
     print(lst[rep-1])
 print(lst[count-1])
+
+
+
+
+
+
+
+n=int(input())
+lst=dict()
+i=1
+while i<=n:
+    nam=input()
+    score=float(input())
+    lst[nam]=float(score)
+    i=i+1
+
+a=min(lst.values())
+b=max(lst.values())
+abc=list()
+val=0
+for s in lst.values():
+    if s>a and s<=b:
+        val=s
+        abc.append(val)
+        continue
+    else:
+        continue
+
+any=min(abc)
+flag=list()
+for key,value in lst.items():
+    if value==any:
+        flag.append(key)
+        continue
+    else:
+        continue
+
+flag.sort()
+for k in flag:
+    print(k)
