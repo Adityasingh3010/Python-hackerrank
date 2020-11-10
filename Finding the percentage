@@ -1,0 +1,12 @@
+n=int(input())
+lst=[]
+for i in range(0,n):
+    a=input()
+    lst.append(a)
+q=input()
+lst1=[(x) for x in lst if x.startswith(q)]
+b=lst1[0]
+b=b.split()
+sum=float(b[1])+float(b[2])+float(b[3])
+sum=sum/3
+print(format(sum, '.2f'))
