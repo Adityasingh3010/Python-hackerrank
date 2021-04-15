@@ -1,0 +1,9 @@
+n=int(input())
+a=input()
+lst=[]
+a=a.split()
+for i in range(0,n):
+    lst.append(a[i])
+t=tuple(lst)
+h=hash(t)
+print(h)
