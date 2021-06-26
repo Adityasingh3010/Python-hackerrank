@@ -1,0 +1,71 @@
+def alphan(s):
+    count=0
+    for i in s:
+        if i.isalnum():
+            count+=1
+        else:
+            continue
+    if count==0:
+        return False
+    else:
+        return True
+    
+        
+def alpha(s):
+    count=0
+    for i in s:
+        if i.isalpha():
+            count+=1
+        else:
+            continue
+    if count==0:
+        return False
+    else:
+        return True
+
+
+def digit(s):
+    count=0
+    for i in s:
+        if i.isdigit():
+            count+=1
+        else:
+            continue
+    if count==0:
+        return False
+    else:
+        return True
+    
+        
+def upper(s):
+    count=0
+    for i in s:
+        if i.isupper():
+            count+=1
+        else:
+            continue
+    if count==0:
+        return False
+    else:
+        return True
+
+        
+def lower(s):
+    count=0
+    for i in s:
+        if i.islower():
+            count+=1
+        else:
+            continue
+    if count==0:
+        return False
+    else:
+        return True
+        
+s=input()
+print(alphan(s))
+print(alpha(s))
+print(digit(s))
+print(lower(s))
+print(upper(s))
+
