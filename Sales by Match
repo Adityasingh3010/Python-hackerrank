@@ -1,0 +1,13 @@
+n=int(input())
+x=input()
+x=x.split(" ")
+count=0
+d={}
+for ele in x:
+    if ele in d:
+        count += 1
+        d.pop(ele)
+        
+    else:
+        d[ele]=1
+print(count)
