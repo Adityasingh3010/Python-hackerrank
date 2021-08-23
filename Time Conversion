@@ -1,0 +1,15 @@
+n=input()
+h=int(n[0:2])
+m=int(n[3:5])
+s=int(n[6:8])
+if (n[-2:]=="PM" and h<12):
+    h=h+12
+elif(n[-2:]=="PM" and h==12):
+    h=12
+elif(n[-2:]=="AM" and h==12):
+    h=0
+l=[]
+l.append("%02d"%h)
+l.append("%02d"%m)
+l.append("%02d"%s)
+print(":".join(l))
