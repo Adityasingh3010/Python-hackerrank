@@ -1,0 +1,9 @@
+st=input()
+n=int(input())
+x=st.count('a')
+q=int(n/len(st))
+r=n%len(st)
+nst=st[:r]
+r=nst.count('a')
+x=(x*q)+r
+print(x)
