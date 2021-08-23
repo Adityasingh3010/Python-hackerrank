@@ -1,0 +1,11 @@
+n=int(input())
+a=input()
+maxx=0
+a=a.split(" ")
+for values in a:
+    values=int(values)
+    if values>=maxx:
+        maxx=values
+        
+c=a.count(str(maxx))
+print(c)
