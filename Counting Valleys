@@ -1,0 +1,14 @@
+n=int(input())
+string=input()
+count = 0
+result=0
+for values in string:
+    if values=='U':
+        count += 1
+    elif values=='D':
+        count -= 1
+        
+    if count==0 and values=='U':
+        result +=1
+        
+print(result)
