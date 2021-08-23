@@ -1,0 +1,11 @@
+n=int(input())
+for i in range(0,n):
+    m=int(input())
+    d=(int(m/5)+1)*5
+    r=d-m
+    if m<38:
+        print(m)
+    elif r<3:
+        print(d)
+    else:
+        print(m)
