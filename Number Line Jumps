@@ -1,0 +1,16 @@
+n=input().split()
+x1=int(n[0])
+v1=int(n[1])
+x2=int(n[2])
+count=0
+v2=int(n[3])
+for i in range(0,10000):
+    if x1+(v1*i)==x2+(v2*i):
+        count=1
+        break
+    else:
+        continue
+if count==0:
+    print("NO")
+else:
+    print("YES")
