@@ -1,0 +1,15 @@
+n=input().split(" ")
+k=int(n[1])
+n=int(n[0])
+count=0
+ar=input().split(" ")
+for i in range(0,n,1):
+    for j in range(i,n):
+        if i==j:
+            continue
+        elif (int(ar[i])+int(ar[j]))%k==0:
+            count+=1
+        else:
+            continue
+            
+print(count)
