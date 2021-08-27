@@ -1,0 +1,15 @@
+a=input()
+b=input()
+count=0
+if len(a)>len(b):
+    maxx1=a
+    minn1=b
+else:
+    maxx1=b
+    minn1=a
+for i in maxx1:
+    if i in minn1:
+        count +=1
+        maxx1=maxx1.replace(str(i),"",1)
+        minn1=minn1.replace(str(i),"",1)
+print((len(maxx1)+(len(minn1))))
