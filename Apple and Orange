@@ -1,0 +1,44 @@
+
+l1=[]
+
+
+def apple(n):
+    temp = a + n
+    if temp >= s and temp <= t:
+        l1.append(temp)
+    else:
+        pass
+
+
+l2=[]
+
+
+def orange(n):
+    temp = b + n
+    if temp >= s and temp <= t:
+        l2.append(temp)
+    else:
+        pass
+
+
+n = input().split(" ")
+s = int(n[0])
+
+t = int(n[1])
+
+n = input().split(" ")
+a = int(n[0])
+b = int(n[1])
+
+n = input().split(" ")
+m = int(n[0])
+n = int(n[1])
+str1 = input().split(" ")
+for i in range(0, m):
+    apple(int(str1[i]))
+print(len(l1))
+
+str2 = input().split(" ")
+for j in range(0, n):
+    orange(int(str2[j]))
+print(len(l2))
