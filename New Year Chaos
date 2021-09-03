@@ -1,0 +1,23 @@
+t=int(input())
+for i in range(t):
+    count=0
+    n=int(input())
+    arr=list(map(int,input().split(" ")))
+    st=arr.copy()
+    st.sort()
+    for j in range(n-1,0,-1):
+        if arr[j]!=j+1:
+            if arr[j-1]==j+1:
+                count+=1
+                arr[j-1],arr[j]=arr[j],arr[j-1]
+                #print(arr,"end1",count)
+            elif arr[j-2]==j+1:
+                count+=2
+                arr[j-2],arr[j]=arr[j],arr[j-2]
+                arr[j-2],arr[j-1]=arr[j-1],arr[j-2]
+                #print(arr,"end2",count)
+            else:
+                print("Too chaotic")
+                break
+    if arr==st:
+        print(count)
