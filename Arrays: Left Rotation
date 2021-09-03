@@ -1,0 +1,6 @@
+n=input().split(" ")
+d=int(n[1])
+n=int(n[0])
+arr=input().split(" ")
+arr=arr[(n+d)%n:]+arr[:(n+d)%n]
+print(" ".join(arr))
